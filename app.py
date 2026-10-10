@@ -31,3 +31,5 @@ def home():
         except Exception as e:
             result = f"Error: {e}"
     return render_template_string(PAGE, url=url, result=result)
+  if __name__ == "__main__":
+    app.run(debug=True)
